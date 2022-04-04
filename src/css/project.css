@@ -1,0 +1,15 @@
+.project{
+    margin: 1% 0;
+    animation: upSlide 500ms linear;
+}
+.loder{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+@media screen and (max-width: 750px) {
+    .project{
+        width: 100%;
+        animation: none;
+    }
+}

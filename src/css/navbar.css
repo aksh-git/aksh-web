@@ -1,0 +1,116 @@
+.active{
+    background: #f0f0f0;
+    -webkit-text-fill-color: #00a49e;
+    font-size: 1.289rem;
+    height: 40px;
+    border-radius: 4px 4px 0 0;
+    z-index: -1;
+}
+.c-navbar{
+    height: max-content;
+}
+.c-menu{
+    display: inline;
+    position: absolute;
+    top: 7px;
+    right: 5%;
+    margin: auto;
+    padding: 0 10px;
+}
+.c-menu hr{
+    display: none;
+}
+.c-menu li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 12px;
+    cursor: pointer;
+    padding: 7px 10px;
+    top: 10px;
+}
+.c-menu-icon{
+    position: absolute;
+    right: 5%;
+    display: none;
+    cursor: pointer;
+}
+.c-menu-icon img{
+    width: 30px;
+}
+.c-menu a {
+    text-decoration: none;
+    overflow: hidden;
+    background: linear-gradient(to left, #666666, #666666 50%, #00a49e 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 335ms ease;
+}
+a:hover {
+    background-position: 0 100%;
+}
+@media screen and (max-width: 900px) {
+    .c-menu li{
+        margin: 0 5px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .c-menu{
+        display: block;
+        background: #fff;
+        width: 90%;
+        margin: auto;
+        margin-top: 7px;
+        left: 0;
+        right: 0;
+        border-radius: 5px;
+        cursor: pointer;
+        overflow: hidden;
+        padding: 2px;
+        box-shadow: 1px 1px 3px #666666;
+        z-index: 100;
+    }
+    .c-menu a{
+        -webkit-text-fill-color: #3d3d3d;
+    }
+    .c-menu .nav-text{
+        padding: 0 10px;
+    }
+    .c-menu li{
+        padding:4px 14px;
+        display: block;
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    .c-menu hr{
+        display: block;
+        margin: 5px;
+    }
+    .c-menu-icon{
+        display: inline;
+    }
+    .c-menu li i{
+        display: none;
+    }
+    .c-menu li:hover{
+        background: #f0f0f0;
+        border-radius: 5px;
+    }
+    .active{
+        background: #f0f0f0;
+        -webkit-text-fill-color: #3d3d3d;
+        font-size: 1.2rem;
+        height: max-content;
+        border-radius: 5px;
+    }
+    .active-c-menu{
+        top: 7%;
+        transition: 150ms ease;
+    }
+    .disable-c-menu{
+        top: -550px;
+        transition: 150ms ease-in-out;
+    }
+}

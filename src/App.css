@@ -1,0 +1,142 @@
+.App{
+    color: #3d3d3d;
+    height: 100vh;
+    width: 100%;
+}
+.b-t-col{
+    color: #00a49e;
+}
+.text-normal{
+    color: #3d3d3d;
+    font-size: 1.2rem;
+}
+.text-decp{
+    font-size: 18px;
+}
+.text-small{
+    color: #3d3d3d;
+    font-size: 0.92rem;
+}
+.text-head{
+    color: #00a49e;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.text-muted{
+    color: #666666;
+}
+.text-link{
+    color: #0a66c2;
+    text-decoration: none;
+}
+.bold{
+    font-weight: 650;
+}
+.App-header{
+    display: flex;
+    padding: 10px 5%;
+}
+.bottom-nav{
+    display: none;
+}
+.main-content{
+    width: 100%;
+    height: 92vh;
+    background: #f0f0f0;
+    overflow: scroll;
+}
+.c-container{
+    padding: 0 5%;
+}
+.noselect{
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently  supported by Chrome, Edge, Opera and Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hidescrollbar::-webkit-scrollbar {
+    display: none;
+}
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+.hidescrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+} 
+
+/* ANIMATIONS */
+@keyframes leftSlide {
+    0%{
+        margin-left: -100vw;
+    }
+    100%{
+        margin-left: 0vw;
+    }
+}
+@keyframes upSlide {
+    0%{
+        margin-top: 100vh;
+    }
+    100%{
+        margin-top: 0vw;
+    }
+}
+@keyframes downSlide {
+    0%{
+        margin-top: -100vh;
+    }
+    100%{
+        margin-top: 0vw;
+    }
+}
+@keyframes rightSlide {
+    0%{
+        margin-right: -100vw;
+    }
+    100%{
+        margin-right: 0vw;
+    }
+}
+@keyframes popout {
+    from{transform:scale(0)}
+    to{transform:scale(1)}
+}
+@-webkit-keyframes popout {
+    from{-webkit-transform:scale(0)}
+    to{-webkit-transform:scale(1)}
+}
+@media screen and (max-width: 750px) {
+    .App{
+        height: 100%;
+        width: 100%;
+        background: #000;
+    }
+    .App-header{
+        display: none;
+    }
+    .bottom-nav{
+        display: block;
+    }
+    .main-content{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        width: 100%;
+        height: 92vh;
+        position: fixed;
+        top: 0;
+        margin-bottom: 8vh;
+        background-color: #000;
+    }
+    .c-container{
+        padding: 2%;
+        margin: 0;
+        margin-bottom: 7vh;
+    }
+    .App-header{
+        box-shadow: 0 1px 3px rgba(53, 48, 48, 0.6);
+    }
+}
+

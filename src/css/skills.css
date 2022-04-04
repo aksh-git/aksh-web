@@ -1,0 +1,33 @@
+.skills{
+    width: 100%;
+}
+.skill-card{
+    padding: 10px;
+    height: max-content;
+    width: 30%;
+    margin: 1%;
+    background: #fff;
+    border-radius: 7px;
+    text-align: center;
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
+}
+.skill-card img{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+.srow{
+   display: grid;
+}
+.scol{
+    display:flex;
+    width: 100%;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

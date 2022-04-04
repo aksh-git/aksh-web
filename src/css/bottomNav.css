@@ -1,0 +1,37 @@
+.bactive{
+    background: linear-gradient(to right, #666666, #666666 50%, #00a49e 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 400ms ease;
+}
+.bottom-nav-container{
+    width: 100%;
+    height: max-content;
+    z-index: 50;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    padding: 0 2%;
+}
+.bottom-nav-inside{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #f0f0f0;
+    padding: 3% 1%;
+    border-radius: 5px 5px 0 0;
+}
+.bottom-nav-inside div{
+    height: 100%;
+    border-radius: 2%;
+    width: 100%;
+    padding: 0 5vw;
+}
+.bottom-nav-inside i{
+    font-size: 1.9rem;
+    cursor: pointer;
+}

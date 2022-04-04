@@ -1,0 +1,13 @@
+.electron{
+  box-shadow: 1px 2px 8px rgb(0, 255, 255);
+}
+#atom-main{
+  position: absolute;
+  margin-top: -7%;
+  margin-left: 20%;
+}
+@media screen and (max-width: 750px) {
+  #atom-main{
+    display: none;
+  }
+}

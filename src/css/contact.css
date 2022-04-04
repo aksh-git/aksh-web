@@ -1,0 +1,142 @@
+.contact-main{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 85%;
+    height: 85%;
+    background-image: url('../assets/images/email-banner.png');
+    background-repeat: no-repeat;
+    background-size: clip;
+    background-position-x: left;
+}
+.contact-form{
+    position: absolute;
+    margin: auto;
+    left: 30%;
+    right: 0;
+    margin-top: 5%;
+    display: grid;
+    background: #fff;
+    padding: 1% 2%;
+    border-radius: 7px;
+    width: 430px;
+    animation: popout 500s ease;
+    -webkit-animation: popout 500ms ease;
+    overflow: hidden;
+    box-shadow: #0000003d 0px 3px 8px;
+}
+.contact-form .head{
+    padding: 5px 0;
+    font-size: 1.6rem;
+}
+.contact-form .input{
+    max-width: 100% ;
+    padding: 5px 7px;
+    margin: 5px 0;
+    background: #f0f0f0;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+.contact-form .input:focus{
+    border: 1px solid #1313133d;
+    box-shadow: 0px 1px 1px #0000003d ;
+}
+.contact-form textarea{
+    height: 100px;
+    resize: none;
+}
+.contact-form .btn{
+    width: max-content;
+    margin: 1% 0;
+    padding: 3px 7%;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid #00a49e3d;
+    outline: none;
+    border-radius: 4px;
+}
+.contact-form .btn:hover{
+    box-shadow: #0000003d 0px 3px 4px;
+}
+.contact-form li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.contact-form li:hover{
+    font-size: larger;
+}
+.error-tv-wrap{
+    width: 80%;
+    padding: 1%;
+    background: none;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.error-tv{
+    background: #fff;
+    padding: 2%;
+    width: 50%;
+    margin-right: 5%;
+    border-radius: 7px;
+    z-index: 10;
+    box-shadow: #0000003d 0px 3px 4px;
+    overflow: hidden;
+    animation: upSlide 250ms ease-in;
+}
+.error-tv img{
+    position: absolute;
+    margin: auto;
+    right: 10%;
+}
+@media screen and (max-width: 750px) {
+    .contact-main{
+        background-size: clip;
+        background-position: bottom;
+        width: 100%;
+        height: 100%;
+    }
+    .contact-form{
+        width: 90%;
+        left: 0;
+        right: 0;
+        animation: upSlide 350ms linear;
+    }
+    .error-tv{
+        width: 100%;
+    }
+}
+@keyframes fly {
+    40%{
+        margin-top: -10%;
+        margin-left: 0vw;
+        transform:rotate(20deg); 
+        transform-origin: 0px 20%;
+        animation-fill-mode: forwards;
+    }
+    20%{
+        transform:rotate(30deg); 
+        transform-origin: 0px 20%;
+        animation-fill-mode: forwards;
+    }
+    10%{
+        transform:rotate(40deg); 
+        transform-origin: 0px 40%;
+        animation-fill-mode: forwards;
+    }
+    80%{
+        margin-left: 30%;
+        margin-top: -10%;
+        transform:rotate(350deg); 
+    }
+    30%{
+        margin-right: -10vw;
+    }
+}
